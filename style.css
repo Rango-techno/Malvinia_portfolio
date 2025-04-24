@@ -1,0 +1,192 @@
+:root {
+    --primary: #a9745f;
+    --primary-dark: #7c574b;
+    --dark: #1e1e1e;
+    --light: #f8f3f0;
+    --gray: #555;
+    --light-gray: #dcdcdc;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
+    line-height: 1.6;
+    background-color: var(--light);
+}
+
+.business-header {
+    background: linear-gradient(rgba(30, 30, 30, 0.8), rgba(30, 30, 30, 0.8)), url('top.png') center/cover no-repeat;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.header-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.business-header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.title {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.professional-nav {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.professional-nav a {
+    background: none;
+    border: 1px solid white;
+    padding: 0.6rem 1.4rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.professional-nav a:hover {
+    background-color: white;
+    color: var(--primary-dark);
+}
+
+.resume-btn {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.resume-btn:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+.business-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background-color: white;
+    box-shadow: 0 0 25px rgba(0,0,0,0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile-section, section {
+    padding: 2.5rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.profile-header {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.professional-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.profile-summary {
+    font-size: 1.1rem;
+    max-width: 700px;
+    color: var(--gray);
+}
+
+.contact-info p,
+.contact-methods p {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin: 0.4rem 0;
+    color: var(--gray);
+}
+
+.social-links.professional {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-links.professional a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark);
+    transition: 0.3s;
+}
+
+.social-links.professional a:hover {
+    background-color: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+h2 {
+    color: var(--primary-dark);
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: var(--dark);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category,
+.project-card,
+.experience-item,
+.certification-item,
+.education-item {
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-left: 4px solid var(--primary);
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.business-footer {
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
